@@ -1,13 +1,20 @@
 @import url(variables.css);
+
+            /*   All   */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+            /*   Body   */
+
 body{
     background-color: var(--color-8);
 }
+
+            /*   Header   */
 
 header{
     /* background: red; */
@@ -22,7 +29,6 @@ header{
 .header__logo{
     /* background: blue; */
 }
-
 .header__logo img{
 
 }
@@ -34,7 +40,6 @@ header{
     align-items: center;
     gap: 54px;
 }
-
 .header__nav li{
     /* background-color: orange; */
     list-style: none;
@@ -53,4 +58,42 @@ header{
 
 .header__menu{
     /* background: violet; */
+}
+
+            /*   Main   */
+
+main{
+    /* background: green; */
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.section__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article__jumper{
+    width: 679px;
+    /* background: violet; */
+    display: flex;
+    flex-direction: column;
+}
+.article__jumper h1{
+    color: var(--color-1);
+    font-family: "Poppins-SemiBold";
+    font-size: 120px;
+    line-height: 110px;
+}
+.article__jumper p{
+
+}
+
+.div__buttons{
+    /* background: rebeccapurple; */
+    display: flex;
+}
+.div__buttons a{
+
 }
