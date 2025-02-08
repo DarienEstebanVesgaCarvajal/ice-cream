@@ -11,8 +11,10 @@
             /*   Body   */
 
 body{
-    background-color: var(--color-8);
-    /* background-image: url(../storage/img/background.png); */
+    /* background-color: var(--color-8); */
+    background-image: url(../storage/img/background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
             /*   Header   */
