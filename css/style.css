@@ -11,7 +11,6 @@
             /*   Body   */
 
 body{
-    /* background-color: var(--color-8); */
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
     background-position: top center;
@@ -29,22 +28,13 @@ header{
     padding-right: 75px;
 }
 
-.header__logo{
-    /* background: blue; */
-}
-.header__logo img{
-
-}
-
 .header__nav{
-    /* background: green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 54px;
 }
 .header__nav li{
-    /* background-color: orange; */
     list-style: none;
 }
 .header__nav li a{
@@ -55,18 +45,10 @@ header{
     display: flex;
 
 }
-.header__nav li a img{
-    
-}
-
-.header__menu{
-    /* background: violet; */
-}
 
             /*   Main   */
 
 main{
-    /* background: green; */
     padding-top: 45px;
     padding-left: 75px;
     padding-right: 75px;
@@ -81,7 +63,6 @@ main{
 
 .article__jumper{
     width: 679px;
-    /* background: violet; */
     display: flex;
     flex-direction: column;
 }
@@ -101,7 +82,6 @@ main{
 
 .div__buttons{
     margin-top: 26px;
-    /* background: rebeccapurple; */
     display: flex;
     gap: 38px;
 }
@@ -109,7 +89,7 @@ main{
     width: 264px;
     height: 86px;
     border-radius: 14px;
-    border: 1px solid var(--color-1);
+    outline: 1px solid var(--color-1);
     background: transparent;
     font-family: "Poppins-Thin";
     font-size: 32px;
@@ -121,8 +101,7 @@ main{
     align-items: center;
 }
 .div__buttons:hover a:hover{
-    border: none;
-    /* outline: none; */
+    outline: none;
     backdrop-filter: blur(24px);
 }
 
