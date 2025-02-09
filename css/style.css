@@ -109,29 +109,50 @@ main{
 
 
 .article__reviews{
-    background-color: red;
-    padding: 20px;
+    /* background-color: red; */
+    overflow-y: auto;
 }
 
 .div__reviews-container{
-    /* width: 345px; */
-    /* height: 202px; */
+    width: 345px;
+    height: 202px;
     background-color: var(--color-1);
     border-radius: 18px;
     padding: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    border: 1px solid var(--color-5);
+    position: sticky;
+    z-index: var(--index);
+    top: 0px;
 }
 
 .div__reviews-cards{
     /* background-color: green; */
     /* padding: 20px; */
 }
+.div__reviews-cards::after{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    color: var(--color-1);
+    position: absolute;
+    background: var(--color-8);
+    border: 1px solid var(--color-6);
+    border-radius: 100%;
+    cursor: pointer;
+    left: -18px;
+    top: -18px;
+}
 .div__reviews-cards p{
     color: var(--color-7);
     font-family: "Poppins-Medium";
     text-align: justify;
+    margin-top: 12px;
+    font-size: 18px;
+    width: 227px;
 }
 
 .div__reviews-profile{
@@ -162,4 +183,5 @@ main{
 }
 .div__reviews-stars img{
     /* background-color: turquoise; */
+    padding: 0;
 }
