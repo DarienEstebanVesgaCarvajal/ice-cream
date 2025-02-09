@@ -13,6 +13,7 @@
 body{
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: top center;
 }
 
@@ -23,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 75px;
     padding-right: 75px;
 }
@@ -59,6 +60,7 @@ main{
 .section__container{
     display: flex;
     justify-content: space-between;
+    margin-top: 111px;
 }
 
 .article__jumper{
@@ -70,7 +72,7 @@ main{
     color: var(--color-1);
     font-family: "Poppins-SemiBold";
     font-size: 120px;
-    line-height: 110px;
+    line-height: 91.4%;
 }
 .article__jumper p{
     margin-top: 26px;
@@ -154,82 +156,63 @@ main{
 }
 
 .article__reviews{
-    /* background-color: red; */
     overflow-y: auto;
 }
 
 .div__reviews-container{
     width: 345px;
     height: 202px;
-    background-color: var(--color-1);
+    background: var(--color-1);
     border-radius: 18px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: calc(var(--index) * var(--cardToppadding));
+    align-items: center;
     border: 1px solid var(--color-5);
     position: sticky;
-    z-index: var(--index);
     top: 0px;
-}
-
-.div__reviews-cards{
-    /* display: flex;
-    flex-direction: column; */
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
 }
 .div__reviews-cards::after{
-    display: flex;
-    font-family: "Poppins-Medium";
     content: "x";
-    width: 35px;
-    height: 35px;
+    cursor: pointer;
+    font-family: "Poppins-Medium";
     color: var(--color-1);
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     background: var(--color-8);
     border: 1px solid var(--color-6);
     border-radius: 100%;
-    cursor: pointer;
     left: -18px;
     top: -18px;
-    justify-content: center;
-    align-items: center;
 }
 .div__reviews-cards p{
-    color: var(--color-7);
     font-family: "Poppins-Medium";
     text-align: justify;
     margin-top: 12px;
     font-size: 18px;
+    color: var(--color-7);
     width: 227px;
 }
 
 .div__reviews-profile{
-    /* background-color: violet; */
-    /* padding: 20px; */
     gap: 16px;
     display: flex;
 }
 .div__reviews-profile img{
-    /* background-color: orange; */
     object-fit: contain;
-    /* padding: 20px; */
 }
 
-.div__reviews-rating{
-    /* background-color: yellow; */
-    /* padding: 20px; */
-}
 .div__reviews-rating h3{
     color: var(--color-2);
     font-family: "Poppins-Medium";
     font-size: 28px;
 }
 
-.div__reviews-stars{
-    /* background-color: olive; */
-    /* padding: 20px; */
-}
 .div__reviews-stars img{
-    /* background-color: turquoise; */
     padding: 0;
 }
